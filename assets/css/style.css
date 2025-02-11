@@ -5,19 +5,36 @@ body {
     background-color: #0a0a0a;
     color: #ffffff;
 }
-
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.bg {
+    position: fixed;
+    z-index: -3;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a1a1a;
     padding: 20px;
-}E
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
 
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #00c4ff;
+}
+
+.logo img{
+    width: 7rem;
+    height: auto;
 }
 
 nav ul {
@@ -39,8 +56,20 @@ nav a:hover {
     color: #00c4ff;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 .hero {
-    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -112,44 +141,115 @@ nav a:hover {
     background: #00a3cc;
 }
 
-.contact-container {
+.contact-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    margin: 20px 0;
-}
-
-.contact-form {
-    background: #222;
-    padding: 20px;
-    border-radius: 5px;
-    width: 45%;
-}
-
-.contact-form h3 {
-    color: #00c4ff;
-}
-
-.contact-details {
-    background: #222;
-    padding: 20px;
-    border-radius: 5px;
-    width: 45%;
-}
-
-.contact-details h3 {
-    color: #00c4ff;
-}
-
-input, textarea {
-    margin: 10px 0;
+    padding: 40px 20px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .contact-form,
+  .contact-info {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+  }
+  
+  .contact-form h1,
+  .contact-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
     padding: 10px;
-    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background: #333;
-    color: #ffffff;
-}
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #d40813;
+  }
+  
+  .contact-info p,
+  .social-media-item p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .customer-care {
+    margin-top: 20px;
+  }
+  
+  .care-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .care-member img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .social-media-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media-item svg {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
 
 button {
     background: #00c4ff;
@@ -180,11 +280,45 @@ button:hover {
     color: #00a3cc;
 }
 
+.footer {
+    padding: 10px 20px;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    margin: 10px 0;
+    z-index: 2;
+  }
+  
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+  }
+  
+  footer .logo {
+    size: 30px;
+    margin-bottom: 2px;
+  }
+  
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
     }
 
     .services-container {
@@ -193,6 +327,7 @@ button:hover {
 
     .service-card {
         flex: 1 1 100%;
+        width: 85vw;
     }
 
     .contact-container {
@@ -204,7 +339,16 @@ button:hover {
         width: 90%;
         margin: 10px 0;
     }
+    
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-details {
+        max-width: 100%;
+    }
 }
+
 
 @media (max-width: 480px) {
     .hero h1 {
