@@ -4,25 +4,24 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
-  </a>
+  <a href="https://app.daily.dev/mononokuma">
+   <img src="https://api.daily.dev/devcards/v2/DMEySfkP0murZQ6MrL1WW.png?type=wide&r=rgz" width="652" alt="Aries's Dev Card"/>
+ </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Activity 1</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  This is a activity that will be done in the whole term of the subject. This website is responsive that will cater to any screen.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=MononoKuma/DT-Act1)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)]
 
 ---
 
@@ -61,18 +60,12 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This project is a Single Page Website with a Responsive Layout designed to adapt seamlessly to different screen sizes. It uses HTML for structure, CSS for styling and responsiveness through media queries, and Flexbox & CSS Grid for dynamic element arrangement. The layout ensures content is accessible and visually appealing across desktops, tablets, and mobile devices. A navbar allows easy navigation, while cards organize key information. The CSS media queries adjust the layout dynamically, ensuring usability and readability. This approach enhances user experience by making the site intuitive, clean, and functional on all devices.
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Single Page Website
+- Responsive Layout
+- Media Queries
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -97,19 +90,15 @@ WD-ProjectName
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ ai.jpg
+|   |   └─ background.jpg
+|   |   └─ blockchain.jpg
+|   |   └─ ceo.png
+|   |   └─ iot.png
+|   |   └─ logo.png
+|   |   └─ photo.jpeg
 |   └─ js
 |       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
 └─ index.html
 └─ readme.md
 ```
@@ -119,4 +108,11 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3Shools | HTML & CSS | https://www.w3schools.com |
+| GeeksforGeeks | HTML & CSS | https://www.geeksforgeeks.org |
+| Ian Ramirez | Template | https://github.com/zyx-0314 |
+| Daily Dev | Readme Icon | https://daily.dev/ |
+| Google | Images | https://google.com/ |
+| Getbootstrap | Icons | https://icons.getbootstrap.com |
+| WakaTime | Timer | https://wakatime.com/@MononoKuma |
+| Github | Webiste | https://mononokuma.github.io/DT-Act1/ |
